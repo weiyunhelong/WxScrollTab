@@ -1,0 +1,27 @@
+<!--components/scrolltab/index.wxml-->
+<!--分类导航-->
+<view class="{{scrollTop>scrollH?'nofixed':''}}"></view>
+<view class="kind_contain {{scrollTop>310?'fixed':''}}">
+  <view class="nav-item {{-2==collegeCur?'tab-on':''}}" bindtap="selectAll">
+    <view class="nav-text">全部</view>
+  </view>
+  <scroll-view scroll-x class="nav" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+    <view class="nav-item" wx:for="{{college}}" wx:key="id" bindtap="collegeSelect" data-id="{{index}}">
+      <view class="nav-text {{index==collegeCur+1?'tab-on':''}}">{{item.name}}</view>
+    </view>
+  </scroll-view>
+  <view class="kind_img" bindtap="showlist">
+    <image lazy-load src="{{showList?'l_down.png':'l_right.png'}}" />
+  </view>
+  <view class="kindlist_box" wx:if="{{showList}}">
+    <view class="kindlist_card">
+      <view class="list_grid">
+        <block wx:for="{{college}}" wx:key="id">
+          <view class="list_one" bindtap="collegeSelect" data-id="{{index}}" data-class="{{item.id}}">
+            <view class="{{index==collegeCur+1?'list-on':''}}">{{item.name}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

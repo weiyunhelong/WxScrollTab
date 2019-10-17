@@ -1,0 +1,13 @@
+<!--pages/water2/index.wxml-->
+<view class="container">
+  <image class="title" src="https://ftp.bmp.ovh/imgs/2019/09/74bada9c4143786a.png"></image>
+  <view class="content">
+    <view class="hd" style="transform:rotateZ({{angle}}deg);">
+      <image class="logo" src="https://ftp.bmp.ovh/imgs/2019/09/d31b8fcf19ee48dc.png"></image>
+      <image class="wave" src="wave.png" mode="aspectFill"></image>
+      <image class="wave wave-bg" src="wave.png" mode="aspectFill"></image>
+    </view>
+    <view class="bd" style="height: 100rpx;">
+    </view>
+  </view>
+</view>

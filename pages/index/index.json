@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "scrolltab":"../../components/scrolltab/index"  
+  }
+}

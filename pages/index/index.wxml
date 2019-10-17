@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="Hv">间隔高度，测试虹吸效果1</view>
+<view id="block0"></view>
+<!--分类导航-->
+<scrolltab tabdata="{{college}}" scrollTop="{{scrollTop}}" scrollH="{{scrollH}}" bindtabtap="tabtapopt"/>
+
+<view class="Hv">间隔高度，测试虹吸效果A</view>
+<view class="Hv">间隔高度，测试虹吸效果B</view>
+<view class="Hv">间隔高度，测试虹吸效果C</view>
+<view class="Hv">间隔高度，测试虹吸效果D</view>

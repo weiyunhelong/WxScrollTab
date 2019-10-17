@@ -1,0 +1,12 @@
+/**index.wxss**/
+.Hv{
+  width: 100vw;
+  height: 310px;
+}
+
+/*滚动Tab*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

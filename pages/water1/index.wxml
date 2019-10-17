@@ -1,0 +1,32 @@
+<!--pages/water1/index.wxml-->
+<!--效果1-->
+<view class="zr">
+  <view class='user_box'>
+    <view class='userInfo'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='userInfo_name'>
+      <open-data type="userNickName"></open-data> , 欢迎您
+    </view>
+  </view>
+  <view class="water">
+    <view class="water-c">
+      <view class="water-1"> </view>
+      <view class="water-2"> </view>
+    </view>
+  </view>
+</view>
+
+<!--效果2-->
+<view class="waveWrapper waveAnimation">
+  <view class="waveWrapperInner bgTop">
+    <view class="wave waveTop" style="background-image: url('https://s2.ax1x.com/2019/09/26/um8g7n.png')"></view>
+  </view>
+  <view class="waveWrapperInner bgMiddle">
+    <view class="wave waveMiddle" style="background-image: url('https://s2.ax1x.com/2019/09/26/umGZ38.png')"></view>
+  </view>
+  <view class="waveWrapperInner bgBottom">
+    <view class="wave waveBottom" style="background-image: url('https://s2.ax1x.com/2019/09/26/umGuuQ.png')"></view>
+  </view>
+</view>
+
